@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="__init__">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/derbitclient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/derbitclient.iml" afterDir="false" />
+    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.0 Add fastapi, postgresql, alembic, pydantic. Setup db, migrations and env">
+      <change afterPath="$PROJECT_DIR$/src/app/client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
@@ -51,14 +42,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.api.executor": "Run",
+    "Python.client.executor": "Debug",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
@@ -88,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792059769355</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.0 Add fastapi, postgresql, alembic, pydantic. Setup db, migrations and env">
+      <option name="closed" value="true" />
+      <created>1792068486921</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1792068486921</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,6 +100,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="__init__" />
-    <option name="LAST_COMMIT_MESSAGE" value="__init__" />
+    <MESSAGE value="1.0 Add fastapi, postgresql, alembic, pydantic. Setup db, migrations and env" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0 Add fastapi, postgresql, alembic, pydantic. Setup db, migrations and env" />
   </component>
 </project>

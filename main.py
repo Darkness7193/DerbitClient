@@ -1,21 +1,21 @@
-from contextlib import asynccontextmanager
-
-from fastapi import FastAPI
-from src.db.connection import init_db
+import requests
+import uvicorn
 
 
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    print('server is starting')
-    await init_db()
-    yield
+def get_public_ticker(instrument_name: str):
+    url = 'https://test.deribit.com/api/v2/public/ticker'
 
-    print('server is ending')
+    payload = {
+        'jsonrpc': '2.0',
+        'id': 8106,
+        'method': 'public/ticker',
+        'params': {'instrument_name': instrument_name}
+    }
+    headers = {'Content-Type': 'application/json'}
+
+    return requests.post(url, json=payload, headers=headers).json()['result']
 
 
-app = FastAPI(lifespan=lifespan)
-
-
-@app.get('/')
-def main():
-    return {'asdf': 'asdf'}
+if __name__ == '__main__':
+    print(get_public_ticker('BTC-PERPETUAL'))
+    uvicorn.run('src.app.client:app', host='0.0.0.0', port=8000, reload=True)
