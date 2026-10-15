@@ -1,6 +1,5 @@
 from sqlalchemy.ext.asyncio import create_async_engine
 from src.config import CONFIG
-from sqlalchemy import text
 from src.db.models import Base, TickerData
 
 
