@@ -14,14 +14,13 @@ services:
         - action: rebuild
           path: pyproject.toml
     volumes:
-      - .:/app
+      - ./migrations:/app/migrations:z
+      - ./migrations/versions:/app/migrations/versions:z
 
   db:
     image: postgres:16
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
+    env_file:
+      - .env
     volumes:
       - db_data:/var/lib/postgresql/data
 
@@ -47,10 +46,10 @@ services:
     build: .
     command: ["uv", "run", "celery", "-A", "src.celery_app", "worker", "--loglevel=info"]
     env_file:
-    - .env
+      - .env
     depends_on:
-    - rabbitmq
-    - db
+      - rabbitmq
+      - db
     restart: unless-stopped
 
 volumes:
