@@ -1,9 +1,11 @@
 Requirements. Требования:
-
+    git
     Mint Cinnamon or Ubuntu 22.04
 
 
 Installation. Установка:
+
+    git clone https://github.com/Darkness7193/DerbitClient DerbitClient
 
     uv sync &&
     mv example.env .env &&
