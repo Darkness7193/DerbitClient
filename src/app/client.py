@@ -6,7 +6,7 @@ from fastapi import FastAPI
 from sqlalchemy import select, desc, true
 
 from src.db.connection import init_db, SyncSession
-from src.app.fetcher import async_get_and_save_tickers_data
+from src.app.tasks import async_get_and_save_tickers_data
 from src.db.models import TickerData
 
 

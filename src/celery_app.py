@@ -7,7 +7,7 @@ celery_app = Celery(
     'derbitclient',
     broker=CELERY_BROKER_URL,
 )
-celery_app.conf.imports = ('src.app.fetcher',)
+celery_app.conf.imports = ('src.app.tasks',)
 celery_app.conf.beat_schedule = {
     'fetch-tickers-every-60-seconds': {
         'task': 'fetch_and_save_tickers',
