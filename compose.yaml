@@ -30,6 +30,26 @@ services:
       - "5672:5672"
       - "15672:15672"
     restart: unless-stopped
+    volumes:
+      - ./rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
+
+  beat:
+    build: .
+    command: ["uv", "run", "celery", "-A", "src.celery_app:celery_app", "beat", "--loglevel=info"]
+    env_file:
+      - .env
+    depends_on:
+      - rabbitmq
+
+  worker:
+    build: .
+    command: ["uv", "run", "celery", "-A", "src.celery_app", "worker", "--loglevel=info"]
+    env_file:
+    - .env
+    depends_on:
+    - rabbitmq
+    - db
+    restart: unless-stopped
 
 volumes:
   db_data:

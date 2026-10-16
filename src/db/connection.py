@@ -1,6 +1,7 @@
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
+from sqlalchemy.pool import NullPool
 
 from src.config import CONFIG
 from src.db.models import Base, TickerData
@@ -11,7 +12,8 @@ SYNC_DB_URL =  f'postgresql+psycopg://{CONFIG.POSTGRES_USER}:{CONFIG.POSTGRES_PA
 
 asyncEngine = create_async_engine(
     url=ASYNC_DB_URL,
-    echo=True
+    echo=True,
+    poolclass=NullPool
 )
 
 syncEngine = create_engine(

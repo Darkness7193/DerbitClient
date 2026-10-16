@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.8 added api /get_all_currency_data, /get_last_currency_price, /get_currency_price, fixed saving in tickers_data timestamp milliseconds and not seconds">
-      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/celery_app.py" afterDir="false" />
+    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.9.1">
+      <change afterPath="$PROJECT_DIR$/rabbitmq.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/celery_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/celery_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/connection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792156919364</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1.9.1">
+      <option name="closed" value="true" />
+      <created>1792165492579</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1792165492579</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +197,7 @@
     <MESSAGE value="1.6 uv add celery, rabbitmq, aiohttp. Add rabbitmq container, remake fetcher with aiohttp" />
     <MESSAGE value="1.7 uv add psycopg, add sync session in src/db/connect.py" />
     <MESSAGE value="1.8 added api /get_all_currency_data, /get_last_currency_price, /get_currency_price, fixed saving in tickers_data timestamp milliseconds and not seconds" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.8 added api /get_all_currency_data, /get_last_currency_price, /get_currency_price, fixed saving in tickers_data timestamp milliseconds and not seconds" />
+    <MESSAGE value="1.9.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.9.1" />
   </component>
 </project>
