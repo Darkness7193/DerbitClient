@@ -50,7 +50,7 @@ def get_last_currency_price(ticker: str):
         query = (
             select(TickerData)
             .where(TickerData.ticker == ticker)
-            .order_by(desc(TickerData.time))
+            .order_by(desc(TickerData.timestamp))
             .limit(1)
         )
         ticker_data = db_session.scalars(query).first()
@@ -64,8 +64,8 @@ def get_currency_price(ticker: str, start_iso_date: str = None, end_iso_date: st
             select(TickerData)
             .where(
                 TickerData.ticker == ticker,
-                TickerData.time >= iso_to_timestamp(start_iso_date) if start_iso_date else true(),
-                TickerData.time >= iso_to_timestamp(end_iso_date)   if end_iso_date   else true(),
+                TickerData.timestamp >= iso_to_timestamp(start_iso_date) if start_iso_date else true(),
+                TickerData.timestamp >= iso_to_timestamp(end_iso_date)   if end_iso_date   else true(),
             )
         )
 
