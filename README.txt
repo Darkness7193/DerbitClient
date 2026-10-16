@@ -10,6 +10,6 @@ sudo docker compose exec rabbitmq rabbitmqctl set_permissions -p / rabbitmquser 
 
 uv run alembic revision --autogenerate -m "__init__"
 
-uv run alembic upgrade head
+sudo docker compose exec -it app uv run alembic upgrade head
 
 sudo docker compose up --build
