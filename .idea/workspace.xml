@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.13 git reproducibility fix">
+    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.14 git reproducibility fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792172816936</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1.14 git reproducibility fix">
+      <option name="closed" value="true" />
+      <created>1792173731586</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1792173731587</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +246,7 @@
     <MESSAGE value="1.10 add worker and beat services to compose, add two depricated feachers to rabbitmq.conf because new celery version isn't stable yet." />
     <MESSAGE value="1.12 git reproducibility fix" />
     <MESSAGE value="1.13 git reproducibility fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.13 git reproducibility fix" />
+    <MESSAGE value="1.14 git reproducibility fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.14 git reproducibility fix" />
   </component>
 </project>
