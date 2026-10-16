@@ -2,7 +2,7 @@ import asyncio
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from src.db.connection import init_db
-from src.app.fetcher import fetch_tickers_data
+from src.app.fetcher import async_get_and_save_tickers_data
 
 
 @asynccontextmanager
@@ -11,12 +11,12 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI()
 
 
 @app.get("/fetch_ticker")
 def fetch_ticker(ticker: str):
-    asyncio.run(fetch_tickers_data('BTC-PERPETUAL'))
+    asyncio.run(async_get_and_save_tickers_data(['BTC-PERPETUAL']))
     return {'asdf0': 'asdf'}
 
 
