@@ -21,11 +21,13 @@ Installation. Установка:
 
     1. Метод для тестов. Получает и сохраняет tickers_data объект:
         GET http://127.0.0.1:8000/fetch_ticker?ticker=BTC-PERPETUAL
-        ticker: str. Название валюты. Список доступных значений можно узнать на https://docs.deribit.com/api-reference/market-data/public-get_instruments
+        ticker: str. Название валюты. Список доступных значений можно узнать на
+        https://docs.deribit.com/api-reference/market-data/public-get_instruments
 
     2. Получение всех сохраненных данных по указанной валюте:
         GET http://localhost:8000/get_all_currency_data?ticker=BTC-PERPETUAL
-        ticker: str. Название валюты. Список доступных значений можно узнать на https://docs.deribit.com/api-reference/market-data/public-get_instruments
+        ticker: str. Название валюты. Список доступных значений можно узнать на
+        https://docs.deribit.com/api-reference/market-data/public-get_instruments
 
     3. Получение последней цены валюты:
         GET http://localhost:8000/get_last_currency_price?ticker=BTC-PERPETUAL
@@ -33,7 +35,8 @@ Installation. Установка:
 
     4. Получение цены валюты с фильтром по дате:
         GET http://localhost:8000/get_currency_price?ticker=BTC-PERPETUAL&start_iso_date=2020-01-01T00:00:00Z
-        ticker:         str.      Название валюты. Список доступных значений можно узнать на https://docs.deribit.com/api-reference/market-data/public-get_instruments
+        ticker:         str.      Название валюты. Список доступных значений можно узнать на
+            https://docs.deribit.com/api-reference/market-data/public-get_instruments
         start_iso_date: iso_date. Начальная дата фильтрования по датам
         end_iso_date:   iso_date. Конечная дата фильтрования по датам
 
@@ -42,19 +45,23 @@ Available API:
 
     1. Endpoint for testing. Fetches and saves a tickers_data record:
         GET http://127.0.0.1:8000/fetch_ticker?ticker=BTC-PERPETUAL
-        ticker: str. The currency instrument name. Available values can be found at https://docs.deribit.com/api-reference/market-data/public-get_instruments
+        ticker: str. The currency instrument name. Available values can be found at
+        https://docs.deribit.com/api-reference/market-data/public-get_instruments
 
     2. Retrieve all saved data for a specified currency:
         GET http://localhost:8000/get_all_currency_data?ticker=BTC-PERPETUAL
-        ticker: str. The currency instrument name. Available values can be found at https://docs.deribit.com/api-reference/market-data/public-get_instruments
+        ticker: str. The currency instrument name. Available values can be found at
+        https://docs.deribit.com/api-reference/market-data/public-get_instruments
 
     3. Retrieve the latest price of a currency:
         GET http://localhost:8000/get_last_currency_price?ticker=BTC-PERPETUAL
-        ticker: str. The currency instrument name. Available values can be found at https://docs.deribit.com/api-reference/market-data/public-get_instruments
+        ticker: str. The currency instrument name. Available values can be found at
+        https://docs.deribit.com/api-reference/market-data/public-get_instruments
 
     4. Retrieve currency prices filtered by date:
         GET http://localhost:8000/get_currency_price?ticker=BTC-PERPETUAL&start_iso_date=2020-01-01T00:00:00Z
-        ticker: str. The currency instrument name. Available values can be found at https://docs.deribit.com/api-reference/market-data/public-get_instruments
+        ticker: str. The currency instrument name. Available values can be found at
+            https://docs.deribit.com/api-reference/market-data/public-get_instruments
         start_iso_date: ISO 8601 date-time. The start date for filtering the data.
         end_iso_date: ISO 8601 date-time. The end date for filtering the data.
 
