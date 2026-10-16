@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.20 git reproducibility fix" />
+    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.21 git reproducibility fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +35,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Darkness7193/DerbitClient.git&quot;,
-    &quot;accountId&quot;: &quot;f612ea71-e420-46c7-9955-9b69494213fd&quot;
+    &quot;accountId&quot;: &quot;6b5abe2f-735a-4b8d-9aed-b3f84282a432&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -281,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792181327516</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="1.21 git reproducibility fix">
+      <option name="closed" value="true" />
+      <created>1792181553707</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1792181553707</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +331,7 @@
     <MESSAGE value="1.18 git reproducibility fix" />
     <MESSAGE value="1.19 git reproducibility fix" />
     <MESSAGE value="1.20 git reproducibility fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.20 git reproducibility fix" />
+    <MESSAGE value="1.21 git reproducibility fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.21 git reproducibility fix" />
   </component>
 </project>
