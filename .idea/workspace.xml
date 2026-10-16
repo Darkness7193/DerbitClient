@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.6 uv add celery, rabbitmq, aiohttp. Add rabbitmq container, remake fetcher with aiohttp">
+    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.7 uv add psycopg, add sync session in src/db/connect.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/connection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792152275480</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1.7 uv add psycopg, add sync session in src/db/connect.py">
+      <option name="closed" value="true" />
+      <created>1792154864683</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1792154864683</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +163,7 @@
     <MESSAGE value="1.4 Fix settings .env path" />
     <MESSAGE value="1.5 test entrypoint for fetching tickers_data" />
     <MESSAGE value="1.6 uv add celery, rabbitmq, aiohttp. Add rabbitmq container, remake fetcher with aiohttp" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.6 uv add celery, rabbitmq, aiohttp. Add rabbitmq container, remake fetcher with aiohttp" />
+    <MESSAGE value="1.7 uv add psycopg, add sync session in src/db/connect.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.7 uv add psycopg, add sync session in src/db/connect.py" />
   </component>
 </project>
