@@ -31,7 +31,7 @@ app = FastAPI()
 @app.get('/fetch_ticker')
 def fetch_ticker():
     asyncio.run(async_get_and_save_tickers_data(['BTC-PERPETUAL']))
-    return {'asdf0': 'asdf'}
+    return {'test1': 'test1'}
 
 
 @app.get('/get_all_currency_data')
