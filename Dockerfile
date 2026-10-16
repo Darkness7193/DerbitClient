@@ -2,6 +2,8 @@ FROM ubuntu:latest
 
 WORKDIR /app
 
+ENV PYTHONPATH=/app
+
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 COPY pyproject.toml uv.lock /app/
