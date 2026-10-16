@@ -1,6 +1,6 @@
 uv sync
 
-Переименовать example.env в .env
+mv example.env .env
 
 sudo docker compose up --build -d
 

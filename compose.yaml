@@ -13,6 +13,8 @@ services:
             - .venv/
         - action: rebuild
           path: pyproject.toml
+    volumes:
+      - .:/app
 
   db:
     image: postgres:16
