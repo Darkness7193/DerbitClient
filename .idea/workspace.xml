@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.14 git reproducibility fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="110256ce-bd02-4d65-bee5-7133b8f2ec64" name="Changes" comment="1.15 git reproducibility fix">
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +37,9 @@
     &quot;accountId&quot;: &quot;f612ea71-e420-46c7-9955-9b69494213fd&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/migrations/env.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3,
   &quot;fromUser&quot;: false
@@ -215,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792173731587</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="1.15 git reproducibility fix">
+      <option name="closed" value="true" />
+      <created>1792174464971</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1792174464971</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +258,7 @@
     <MESSAGE value="1.12 git reproducibility fix" />
     <MESSAGE value="1.13 git reproducibility fix" />
     <MESSAGE value="1.14 git reproducibility fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.14 git reproducibility fix" />
+    <MESSAGE value="1.15 git reproducibility fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.15 git reproducibility fix" />
   </component>
 </project>
